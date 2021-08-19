@@ -1,5 +1,5 @@
 ## Image what i use
-FROM python:3.6.1-alpine
+FROM python
 # define working directory
 WORKDIR /app-flask
 # updating os
