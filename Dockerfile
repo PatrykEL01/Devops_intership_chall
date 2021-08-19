@@ -3,7 +3,7 @@ FROM python
 # define working directory
 WORKDIR /app-flask
 # updating os
-RUN apk upgrade --available && pip install --upgrade pip
+RUN apt upgrade && pip install --upgrade pip
 # copy the contents
 COPY . /app-flask
 # run pip to install dep. flask app
