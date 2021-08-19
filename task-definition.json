@@ -26,10 +26,10 @@
       "secrets": null,
       "dockerSecurityOptions": null,
       "memory": null,
-      "memoryReservation": 3000,
+      "memoryReservation": 900,
       "volumesFrom": [],
       "stopTimeout": null,
-      "image": "public.ecr.aws/k4i3k1v8/flask-app-intership",
+      "image": "983046535825.dkr.ecr.us-east-2.amazonaws.com/demo",
       "startTimeout": null,
       "firelensConfiguration": null,
       "dependsOn": null,
@@ -46,7 +46,7 @@
       "dockerLabels": null,
       "systemControls": null,
       "privileged": null,
-      "name": "flask-app-intership"
+      "name": "demo"
     }
   ],
   "placementConstraints": [],
@@ -56,9 +56,15 @@
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-2:983046535825:task-definition/flask-app-intership:1",
-  "family": "flask-app-intership",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-2:983046535825:task-definition/aww-demo:1",
+  "family": "aww-demo",
   "requiresAttributes": [
+    {
+      "targetId": null,
+      "targetType": null,
+      "value": null,
+      "name": "com.amazonaws.ecs.capability.ecr-auth"
+    },
     {
       "targetId": null,
       "targetType": null,
