@@ -3,7 +3,7 @@ FROM python:3.6.1-alpine
 # define working directory
 WORKDIR /app-flask
 # updating os
-RUN apk upgrade --available && pip install --upgrade pip
+RUN sudo apk upgrade --available && sudo pip install --upgrade pip
 # copy the contents
 COPY . /app-flask
 # run pip to install dep. flask app
