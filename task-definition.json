@@ -11,7 +11,7 @@
         {
           "hostPort": 0,
           "protocol": "tcp",
-          "containerPort": 5000
+          "containerPort": 5001
         }
       ],
       "command": null,
@@ -56,8 +56,8 @@
     "EXTERNAL",
     "EC2"
   ],
-  "taskDefinitionArn": "arn:aws:ecs:us-east-2:983046535825:task-definition/aww-demo:1",
-  "family": "aww-demo",
+  "taskDefinitionArn": "arn:aws:ecs:us-east-2:983046535825:task-definition/demo1:1",
+  "family": "demo1",
   "requiresAttributes": [
     {
       "targetId": null,
